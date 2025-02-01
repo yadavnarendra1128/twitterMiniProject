@@ -1,0 +1,38 @@
+# Ignore environment variable files
+backend/.env
+frontend/.env
+
+# Ignore node_modules for backend and frontend
+backend/node_modules/
+frontend/node_modules/
+
+# Ignore logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore build outputs for backend and frontend
+backend/dist/
+backend/build/
+frontend/dist/
+frontend/build/
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.bak
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.txt
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+setup.txt
