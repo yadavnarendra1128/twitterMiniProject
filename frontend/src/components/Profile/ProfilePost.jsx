@@ -106,19 +106,13 @@ const ProfilePost = ({ post }) => {
 
   return (
     <div className="border-b-2 relative border-gray-800 p-2 px-2 w-full">
-<<<<<<< HEAD
-=======
       <Link to={`/profile/${postUser?.username}`}>
->>>>>>> cfd6bb2 (made responsive)
       <img
         className="w-10 h-10 mt-1 rounded-full object-cover absolute left-3 top-3"
         src={postUser?.profileImg || "/assets/defaultprofile.jpg"}
         alt={""}
       />
-<<<<<<< HEAD
-=======
       </Link>
->>>>>>> cfd6bb2 (made responsive)
       <div className="ml-12 px-1">
         <div className="flex gap-x-2 items-center px-2 relative">
           <div className="text-lg font-semibold text-slate-200 mt-1">
@@ -126,11 +120,7 @@ const ProfilePost = ({ post }) => {
           </div>
           <Link
             to={`/profile/${postUser?.username}`}
-<<<<<<< HEAD
-            className="text-md text-slate-400"
-=======
             className="hidden md:block lg:block text-md text-slate-400"
->>>>>>> cfd6bb2 (made responsive)
           >
             @{postUser?.username}
           </Link>

@@ -6,11 +6,6 @@ const {
   idValidator,
 } = require("../utils/validators/post.validators");
 const {
-<<<<<<< HEAD
-  signUpValidator,
-  logInValidator,
-=======
->>>>>>> cfd6bb2 (made responsive)
   validators,
 } = require("../utils/validators/auth.validators");
 

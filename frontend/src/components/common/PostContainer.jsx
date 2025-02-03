@@ -1,6 +1,6 @@
 import React from "react";
-import Post from "./Post";
 import ProfilePost from "../Profile/ProfilePost";
+import Post from './Post'
 import ProfileLikesPost from "../Profile/ProfileLikesPost";
 import { useSelector } from "react-redux";
 import LoaderSvg from '../../utils/svg/LoaderSvg'

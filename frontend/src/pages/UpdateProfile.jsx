@@ -65,11 +65,7 @@ const UpdateProfile = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div className="bg-black w-[55%] border-r-2 border-slate-800 overflow-auto scrollbar-none text-white px-6 py-2 rounded-lg shadow-md">
-=======
     <div className="w-full bg-black lg:w-[60%] border-r-2 border-slate-800 overflow-auto scrollbar-none text-white px-6 py-2 rounded-lg shadow-md">
->>>>>>> cfd6bb2 (made responsive)
       <h1 className="text-xl font-semibold mb-8 my-2">Update Profile</h1>
       <form onSubmit={handleSubmit}>
         <div className="flex gap-x-12 px-2 w-full">

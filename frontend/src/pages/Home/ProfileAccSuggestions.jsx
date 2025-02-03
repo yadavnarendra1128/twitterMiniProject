@@ -21,11 +21,7 @@ const ProfileAccSuggestions = () => {
   }, [dispatch,username]);
 
   return !loading ? (
-<<<<<<< HEAD
-    <div className="hidden ml-2 sm:hidden lg:block lg:min-w-[21%] lg:h-[50%] lg:mt-2 rounded-lg bg-slate-800 p-4 flex-col">
-=======
     <div className="hidden ml-2 lg:block lg:min-w-[21%] lg:h-[50%] lg:mt-2 rounded-lg bg-slate-800 p-4 flex-col">
->>>>>>> cfd6bb2 (made responsive)
       <div className="text-xl pl-1 pb-2 font-normal text-white">
         Suggested accounts
       </div>

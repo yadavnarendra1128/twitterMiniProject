@@ -26,15 +26,11 @@ const ProfileAccountItem = ({ acc }) => {
           alt="Profile"
         />
         <div className="relative">
-<<<<<<< HEAD
-          <div className="text-sm font-medium text-white">{acc.fullname}</div>
-=======
           <div className="text-sm font-medium text-white">
             {acc?.fullname.length > 15
               ? acc.fullname.split(" ")[0]
               : acc.fullname || "fullname"}
           </div>
->>>>>>> cfd6bb2 (made responsive)
           <Link
             to={`/profile/${acc.username}`}
             className="text-sm text-slate-400"
