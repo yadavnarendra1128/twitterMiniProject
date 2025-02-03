@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import { useState, useEffect, act } from "react";
 import { useDispatch, useSelector } from "react-redux";
+=======
+import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+>>>>>>> cfd6bb2 (made responsive)
 import {
   fetchPostSuggestions,
   fetchAllPosts,

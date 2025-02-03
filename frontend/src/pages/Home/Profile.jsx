@@ -52,7 +52,11 @@ const Profile = () => {
    }, [username, dispatch,activeTab]);
 
   return !loading ? (
+<<<<<<< HEAD
     <div className="flex flex-col bg-black text-white w-[55%] h-[100%] border-r-2 border-slate-800 overflow-auto scrollbar-none">
+=======
+    <div className="flex flex-col bg-black text-white w-full lg:w-[55%] h-[100%] border-r-2 border-slate-800 overflow-auto scrollbar-none">
+>>>>>>> cfd6bb2 (made responsive)
       {/* Back and User Name */}
 
       <div className="p-2 flex gap-x-2 items-center">
@@ -66,6 +70,7 @@ const Profile = () => {
       </div>
 
       {/* Banner Image */}
+<<<<<<< HEAD
       <div
         className="relative w-full h-20 bg-slate-700"
         style={{
@@ -75,6 +80,14 @@ const Profile = () => {
           backgroundSize: "cover",
         }}
       >
+=======
+      <div className="relative w-full h-20 bg-slate-700">
+        <img
+          className="w-full h-full object-cover"
+          src={profile?.coverImg || "/assets/icons/banner.jpg"}
+          alt="Banner"
+        />
+>>>>>>> cfd6bb2 (made responsive)
         <div className="absolute inset-0 bg-black opacity-30" />
       </div>
 

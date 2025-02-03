@@ -18,9 +18,17 @@ const Sidebar = () => {
 
   return (
     <div className="w-[20%] h-full border-r-2 border-gray-800 flex flex-col">
+<<<<<<< HEAD
       <span className="justify-center lg:justify-start px-4 items-center flex">
         <XSvg className="w-[60%] lg:w-[18%] fill-white pt-5 lg:pt-2"></XSvg>
       </span>
+=======
+      <Link to={`/`}>
+        <span className="w-[100%] justify-center lg:justify-start px-4 items-center flex">
+          <XSvg className="w-[80%] sm:w-[80%] md:w-[60%] lg:w-[18%] fill-white pt-5 lg:pt-2"></XSvg>
+        </span>
+      </Link>
+>>>>>>> cfd6bb2 (made responsive)
       <div className="h-full flex flex-col justify-between px-4 pb-5">
         <div className="flex flex-col gap-y-5 mt-10">
           <MenuItem
@@ -29,7 +37,11 @@ const Sidebar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+<<<<<<< HEAD
                 className="size-14 lg:size-8 fill-white"
+=======
+                className="size-8 sm:size-12 md:size-14 lg:size-8 fill-white"
+>>>>>>> cfd6bb2 (made responsive)
               >
                 <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
                 <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
@@ -44,7 +56,11 @@ const Sidebar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+<<<<<<< HEAD
                 className="size-14 lg:size-8 fill-white"
+=======
+                className="size-8 sm:size-12 md:size-14 lg:size-8 fill-white"
+>>>>>>> cfd6bb2 (made responsive)
               >
                 <path
                   fillRule="evenodd"
@@ -62,7 +78,11 @@ const Sidebar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+<<<<<<< HEAD
                 className="size-14 lg:size-8 fill-white"
+=======
+                className="size-8 sm:size-12 md:size-14 lg:size-8 fill-white"
+>>>>>>> cfd6bb2 (made responsive)
               >
                 <path
                   fillRule="evenodd"
@@ -75,6 +95,7 @@ const Sidebar = () => {
             to={`/profile/${user.username}`}
           ></MenuItem>
         </div>
+<<<<<<< HEAD
         <div className="flex items-center">
           <img
             className="w-10 h-10 rounded-full overflow-hidden object-cover mr-2"
@@ -82,6 +103,17 @@ const Sidebar = () => {
             alt="Profile"
           />
           <div className="relative w-[60%] bg-red-50 hidden sm:hidden lg:block">
+=======
+        <div className="flex items-center justify-center">
+          <Link to={`/profile/${user?.username}`}>
+            <img
+              className="hidden sm:hidden md:block lg:block w-10 h-10 rounded-full overflow-hidden object-cover mr-2"
+              src={user?.profileImg || "/assets/defaultprofile.jpg"}
+              alt="Profile"
+            />
+          </Link>
+          <div className="relative w-[60%] bg-red-50 hidden lg:block">
+>>>>>>> cfd6bb2 (made responsive)
             <div className="text-lg font-semibold text-white absolute -bottom-1 ml-1">
               {user?.fullname.length > 15
                 ? user.fullname.split(" ")[0]
@@ -96,7 +128,11 @@ const Sidebar = () => {
           </div>
           <img
             onClick={handleLogout}
+<<<<<<< HEAD
             className="w-10 h-10 px-2 sm:ml-2 bg-slate-800 flex justify-center items-center cursor-pointer rounded-lg"
+=======
+            className="w-12 h-12 px-2 sm:w-12 sm:h-12 md:w-10 md:h-10 lg:w-10 lg:h-10 sm:ml-2 bg-slate-800 flex justify-center items-center cursor-pointer rounded-lg"
+>>>>>>> cfd6bb2 (made responsive)
             src="/assets/icons/log-out.svg"
             alt="Logout"
           />
